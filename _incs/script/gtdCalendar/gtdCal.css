@@ -1,0 +1,140 @@
+
+
+/* div wrapping the calendar */
+.gtdCalContainer {
+	text-align:center;
+	padding:0;
+	margin:0;
+	}
+	
+/* added this to keep ie from pushing the calendar below the schedule listing .. */
+.gtdCalContainer table {
+	margin-right:0;
+	margin-left:0;
+	padding-right:0;
+	padding-left:0;
+	}
+
+/* div holding the month/year header */
+.gtdCalHeader {
+	font-size:1.5em;
+	font-weight:bold;
+	padding:0;
+	margin:0 0 -0.6em 0;
+	}
+
+/* table holding the top navigation controls */
+.gtdCalTopNav {
+	margin-top:0;
+	margin-bottom:.3em;
+	padding-top:0;
+	padding-bottom:0;
+	}
+.gtdCalTopNav td {
+	vertical-align:bottom;
+	}
+.gtdCalTopNav td img {
+	border:none;
+	}
+.gtdCalTopNavPrevMonth,
+.gtdCalTopNavNextMonth,
+.gtdCalTopNavPrevYear,
+.gtdCalTopNavNextYear,
+.gtdCalTopNavMonthYearPicker {
+	width:1%;
+	}
+.gtdCalTopNavToday {
+	padding:0 0 2px 0;
+	text-align:right;
+	}
+.gtdCalTopNavMonthYearPicker {
+	text-align:right;
+	padding:0 1em 0 .5em;
+	white-space:nowrap;
+	}
+.gtdCalTopNavMonthYearPicker select {
+	font-size:.8em;
+	margin:0;
+	}
+.gtdCalTopNavMonthYearPicker form {
+	display:inline;
+	}
+	
+/* table holding the days */
+.gtdCalGrid {
+	border:solid 1px #4483dc;
+	border-collapse:collapse;
+	margin-top:0;
+	margin-bottom:0;
+	padding-top:0;
+	padding-bottom:0;
+	}
+.gtdCalGrid td {
+	vertical-align:top;
+	border:solid 1px #4483dc;
+	width:14.28%;
+	padding:0;
+	margin:0;
+	min-height:5em;
+	}
+	
+/* style special cells */
+.gtdCalGridSun {
+	}
+.gtdCalGridSat {
+	}
+.gtdCalGridToday {
+	background-color:#eeee99;
+	}
+.gtdCalGridNotPartOfMonth {}
+
+/* cells in day label row */
+.gtdCalWeekdayHeader {}
+.gtdCalWeekdayHeader td	{
+	background-color:#4483dc;
+	color:white;
+	font-weight:bold;
+	padding:3px; 
+	}
+	
+/* format date number */
+.gtdDayNumberContainer {
+	text-align:right;
+	font-weight:bold;
+	padding:1px 3px 6px 3px;
+	}
+.gtdDayNumberContainer a:link,
+.gtdDayNumberContainer a:visited,
+.gtdDayNumberContainer a:active {
+	color:#1968cf;
+	text-decoration:none;
+	}
+.gtdDayNumberContainer a:hover {
+	color:#1968cf;
+	text-decoration:underline;
+	}
+	
+/* format text item */
+.gtdCalCellItem {
+	background-color:#f9f9f9;
+	text-align:left;
+	padding:3px 3px 2px 3px;
+	margin:3px;
+	border:solid 1px #4483dc;
+	}
+.gtdCalCellItem a:link,
+.gtdCalCellItem a:visited,
+.gtdCalCellItem a:active {
+	color:#000000;
+	text-decoration:none;
+	}
+.gtdCalCellItem a:hover {
+	color:#000000;
+	text-decoration:underline;
+	}
+a:link.scheduledMember,
+a:visited.scheduledMember,
+a:active.scheduledMember,
+a:hover.scheduledMember {
+	color:#1968cf;
+	}

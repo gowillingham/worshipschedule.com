@@ -1,0 +1,35 @@
+﻿.content .tip-box											{width:148px !important;}
+.message 													{width:674px;}
+
+#container .contentwrap .content h3							{font-size:1.9em;margin:0 0 10px 10px;padding:0 0 5px 0;}
+#container .contentwrap .content h4							{font-size:1.5em;color:#ec5000;font-weight:normal;margin:0 0 0 10px;padding:5px 0;}
+#container .contentwrap .content .first						{margin-top:-13px;}
+#container .contentwrap .content p							{padding:10px 195px 0 0;font-size:1.1em;line-height:1.3em;}
+
+#container .contentwrap .content #availability-grid			{font-family:verdana;margin:0 0 0 0;}
+#container .contentwrap .content #availability-grid table	{border:none;border-spacing:1px;border-collapse:separate;margin:10px 10px 10px 10px;}
+#availability-grid table td									{width:95px;}
+
+#availability-grid table td 								{background-color:#ccc;color:#3c3c3c;line-height:1.2em;padding:5px 3px;text-align:center;}
+#availability-grid table tr.month td						{border:solid 1px #bababa;padding:10px 3px;font-weight:bold;background-color:#ccc;}
+#availability-grid table tr.day td							{border:solid 1px #bababa;font-weight:bold;background-color:#ccc;}
+#availability-grid table tr.time td							{border:solid 1px #bababa;font-weight:normal;background-color:#ccc;font-size:.8em;letter-spacing:-.5px;}
+#availability-grid table tr.event-name td					{vertical-align:middle;border:solid 1px #bababa;font-weight:normal;background-color:#ccc;font-size:.9em;letter-spacing:-.3px;}
+#availability-grid table tr.program-name td					{vertical-align:middle;border:solid 1px #bababa;font-weight:bold;background-color:#ddd;font-size:.9em;letter-spacing:-.3px;}
+#availability-grid table tr.program-name td span			{font-weight:normal;}
+#availability-grid table tr.schedule-name td				{vertical-align:middle;border:solid 1px #bababa;font-weight:normal;background-color:#ddd;font-size:.9em;letter-spacing:-.3px;}
+#availability-grid table tr.available td.member-name		{letter-spacing:-1px;width:140px;text-align:left;vertical-align:middle;border:solid 1px #bababa;font-weight:bold;text-decoration:underline;background-color:#ddd;font-size:.9em;padding:3px 3px 3px 5px;color:#4483dc;cursor:pointer;}
+#availability-grid table tr.available td.member-name .icon	{float:right;margin-left:5px;}
+#availability-grid table tr.available td					{border:solid 1px #93de97;font-weight:bold;background-color:#a8ffa6;color:#339933;height:25px;padding:0;margin:0;vertical-align:middle;}
+#availability-grid table tr.available td div				{vertical-align:middle;text-align:center;}
+#availability-grid table tr.available td img				{border:none;padding:none:margin:none;}
+#availability-grid table tr.available td.not-available		{border-color:#e88782;background-color:#ffaca8;color:#AF514C;}
+#availability-grid table tr.available td.unknown			{border-color:#EFDC0E;background-color:#FFF36F;color:#AFA000;}
+#availability-grid table tr.available td.checkbox			{padding:0;margin:0;}
+
+.tip-box ul li span											{margin:0 8px 0 0;float:left;border:solid 1px;width:12px;height:12px;}
+.tip-box ul li span.available 								{border-color:#93de97;background-color:#a8ffa6;}
+.tip-box ul li span.not-available 							{border-color:#e88782;background-color:#ffaca8;}
+.tip-box ul li span.unknown		 							{border-color:#EFDC0E;background-color:#FFF36F;}
+
+#availability-grid table tr td.clear						{border:none;background-color:#fff;}

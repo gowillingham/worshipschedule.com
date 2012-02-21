@@ -1,0 +1,226 @@
+<!--METADATA TYPE="TypeLib" NAME="Microsoft ActiveX Data Objects 2.7 Library" UUID="{EF53050B-882E-4776-B643-EDA472E8E3F2}" VERSION="2.7"-->
+<!--METADATA TYPE="TypeLib" NAME="Microsoft CDO For Exchange 2000 Library" UUID="{CD000000-8B95-11D1-82DB-00C04FB1625D}" VERSION="1.0"-->
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+
+'EventName              Description
+'Session_OnStart        Runs the first time a user runs any page in your application
+'Session_OnEnd          Runs when a user's session times out or quits your application
+'Application_OnStart    Runs once when the first page of your application is run for the first time by any user
+'Application_OnEnd      Runs once when the web server shuts down
+
+</SCRIPT>
+
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+Sub Session_OnStart()
+
+	If Len(Application.Value("CNN_STR")) = 0 Then
+	
+		'set remote server connection string
+		Application.Value("CNN_STR") = "Provider=sqloledb;" & _
+			"Data Source=P91222\SQLEXPRESS;" & _
+			"Initial Catalog=worshipschedule;" & _
+			"User ID=weblogin;" & _
+			"Password=worshipschedule;"
+			
+		'set attachments folder
+		Application.Value("EMAIL_ATTACHMENTS_DIRECTORY") = "C:\Inetpub\wwwroot\worshipschedule.com\worshipschedule.files\"
+		'set import folder
+		Application.Value("IMPORT_MEMBER_FILE_DIRECTORY") = "C:\Inetpub\wwwroot\worshipschedule.com\worshipschedule.files\"
+		'set create pdf folder
+		Application.Value("CREATE_PDF_FILE_DIRECTORY") = "C:\Inetpub\wwwroot\worshipschedule.com\worshipschedule.files\"
+		'set file manager folder
+		Application.Value("FILE_MANAGER_FILESTORE") = "C:\Inetpub\wwwroot\worshipschedule.com\worshipschedule.filemanager\"
+		' set live server flag for email config ..
+		Application.Value("IsLiveServer") = True
+		
+		' settings for development server	
+		If Request.ServerVariables("SERVER_NAME") = "worshipschedule.local" Or Request.ServerVariables("SERVER_NAME") = "worshipschedule.maint.local" Then
+		
+			' cnn string
+			Application.Value("CNN_STR") = "Provider=sqloledb;" & _
+				"Data Source=localhost;" & _
+				"Initial Catalog=worshipschedule;" & _
+				"User ID=weblogin;" & _
+				"Password=worshipschedule;"
+				
+			'set email attachments folder
+			Application.Value("EMAIL_ATTACHMENTS_DIRECTORY") = "D:\_data\stephen\dev\worshipschedule\worshipschedule.files\"
+			'set import folder
+			Application.Value("IMPORT_MEMBER_FILE_DIRECTORY") = "D:\_data\stephen\dev\worshipschedule\worshipschedule.files\"
+			'set create pdf folder
+			Application.Value("CREATE_PDF_FILE_DIRECTORY")= "D:\_data\stephen\dev\worshipschedule\worshipschedule.files\"
+			'set file manager folder
+			Application.Value("FILE_MANAGER_FILESTORE") = "D:\_data\stephen\dev\worshipschedule\worshipschedule.filemanager\"
+			
+			'set development server flag
+			Application.Value("IS_DEVELOPMENT_SERVER") = True
+			
+			'enable/disable trial account 
+			Application.Value("TRIAL_ACCOUNT_ENABLED") = True
+			
+			' paypal gateway address
+			Application.Value("PAYPAL_GATEWAY") = "https://www.sandbox.paypal.com/cgi-bin/webscr"
+			' paypal business id
+			Application.Value("PAYPAL_BUSINESS_ID") = "willin_1199747222_biz@lakevillejuniors.com"
+			
+			' encryption setting
+			Application.Value("ENCRYPT_QSTRING_OFF") = False
+			
+			' set live server flag for email config ..
+			Application.Value("IsLiveServer") = False
+			
+			' global login session timeout
+			Application.Value("SESSION_TIMEOUT") = 86400	' seconds = 24 hrs
+			Application.Value("SESSION_ABANDON_TIMEOUT") = 24	' hours
+														
+			' maint (maintenance branch)
+			If Request.ServerVariables("SERVER_NAME") = "worshipschedule.maint.local" Then
+			
+				' cnn string for maint db
+				Application.Value("CNN_STR") = "Provider=sqloledb;" & _
+					"Data Source=localhost;" & _
+					"Initial Catalog=worshipschedule_maint;" & _
+					"User ID=weblogin;" & _
+					"Password=worshipschedule;"
+					
+				'set email attachments folder
+				Application.Value("EMAIL_ATTACHMENTS_DIRECTORY") = "D:\_data\stephen\dev\worshipschedule.maint\worshipschedule.files\"
+				'set import folder
+				Application.Value("IMPORT_MEMBER_FILE_DIRECTORY") = "D:\_data\stephen\dev\worshipschedule.maint\worshipschedule.files\"
+				'set create pdf folder
+				Application.Value("CREATE_PDF_FILE_DIRECTORY")= "D:\_data\stephen\dev\worshipschedule.maint\worshipschedule.files\"
+				'set file manager folder
+				Application.Value("FILE_MANAGER_FILESTORE") = "D:\_data\stephen\dev\worshipschedule.maint\worshipschedule.filemanager\"
+			
+				' encryption setting
+				Application.Value("ENCRYPT_QSTRING_OFF") = False
+			End If
+		End If	
+		
+		' settings for beta.worshipschedule server	
+		If Request.ServerVariables("SERVER_NAME") = "beta.worshipschedule.com" Then
+			
+			Application.Value("CNN_STR") = "Provider=sqloledb;" & _
+				"Data Source=server24;" & _
+				"Initial Catalog=worshipschedule_beta;" & _
+				"User ID=weblogin;" & _
+				"Password=worshipschedule;"
+				
+			'set attachments folder
+			Application.Value("EMAIL_ATTACHMENTS_DIRECTORY") = "C:\Inetpub\wwwroot\beta.worshipschedule.com\files\"
+			'set import folder
+			Application.Value("IMPORT_MEMBER_FILE_DIRECTORY") = "C:\Inetpub\wwwroot\beta.worshipschedule.com\files\"
+			'set file manager folder
+			Application.Value("FILE_MANAGER_FILESTORE") = "C:\Inetpub\wwwroot\worshipschedule.com\filemanager\"
+			
+			' set live server flag for email config .. false will send mail to pickup folder instead of email server ..
+			Application.Value("IsLiveServer") = False
+		
+			'set development server flag
+			Application.Value("IS_DEVELOPMENT_SERVER") = True
+			
+			' encryption setting
+			Application.Value("ENCRYPT_QSTRING_OFF") = False
+
+			' paypal gateway address
+			Application.Value("PAYPAL_GATEWAY") = "https://www.sandbox.paypal.com/cgi-bin/webscr"
+			' paypal business id
+			Application.Value("PAYPAL_BUSINESS_ID") = "willin_1248207716_biz@lakevillejuniors.com"
+		End If
+		
+	End If
+End Sub
+
+Sub Application_OnStart
+
+	' fogbugz ..
+	Application.Value("FOGBUGZ_SCOUT_SUBMIT_URL") = "https://worshipschedule.fogbugz.com/ScoutSubmit.asp"
+	Application.Value("SUPPORT_FORUM_URL") = "https://worshipschedule.fogbugz.com/default.asp?forum"
+
+	'enable/disable trial account 
+	Application.Value("TRIAL_ACCOUNT_ENABLED") = True
+
+	'global application name
+	Application.Value("APPLICATION_NAME") = "Worshipschedule"
+	
+	' new client settings ..
+	Application.Value("NEW_CLIENT_NAME") = "My Account"
+	Application.Value("TRIAL_ACCOUNT_LENGTH") = 45
+	Application.Value("INITIAL_FILE_STORAGE") = 1000000000
+	
+	'set form validation to on/off for debugging
+	Application.Value("FORM_VALIDATION_OFF") = False
+	'set QString() encryption on/off for debugging	
+	Application.Value("ENCRYPT_QSTRING_OFF") = False
+	
+	'max size for attachment folder on server
+	Application.Value("cAttachmentMgr.MAX_ALL_ATTACHMENT_SIZE") = 5120000
+	'max size for attachment to be uploaded
+	Application.Value("cAttachmentMgr.MAX_ATTACHMENT_SIZE") = 1000000
+	' how long to store attachment on serve for sent mail 
+	Application.Value("EMAIL_ATTACHMENT_MONTHS_TO_LIVE") = 6
+	Application.Value("EMAIL_UNSENT_DRAFTS_HOURS_TO_LIVE") = 12
+	
+	Application.Value("ICON_IMAGE_DIRECTORY") = "/_images/icons/"
+	
+	'pickup folder
+	Application.Value("cEmailSender.PICKUP_FOLDER") = "c:\inetpub\mailroot\pickup"
+	
+	'global root email domain
+	Application.Value("ROOT_EMAIL_DOMAIN") = "worshipschedule.com"
+
+	'global support email address
+	Application.Value("SUPPORT_EMAIL_ADDRESS") = "support@worshipschedule.com"
+	'global info email address
+	Application.Value("INFO_EMAIL_ADDRESS") = "info@worshipschedule.com"
+	'global admin email address
+	Application.Value("ADMIN_EMAIL_ADDRESS") = "admin@worshipschedule.com"
+	'global sales email address
+	Application.Value("SALES_EMAIL_ADDRESS") = "sales@worshipschedule.com"
+	'application error email address
+	Application.Value("APPLICATION_ERROR_EMAIL_ADDRESS") = "application_error@worshipschedule.com"
+	'application email address
+	Application.Value("APPLICATION_EMAIL_ADDRESS") = "application@worshipschedule.com"
+	'global send credentials email address
+	Application.Value("SEND_CREDENTIALS_EMAIL_ADDRESS") = "login@worshipschedule.com"
+	'global new client address
+	Application.Value("NEW_CLIENT_EMAIL_ADDRESS") = "newclient@worshipschedule.com"
+	'global anonymous address
+	Application.Value("ANONYMOUS_EMAIL_ADDRESS") = "anonymous@worshipschedule.com"
+	'global no reply address
+	Application.Value("NO_REPLY_EMAIL_ADDRESS") = "noreply@worshipschedule.com"
+	'global privacy address
+	Application.Value("PRIVACY_EMAIL_ADDRESS") = "privacy@worshipschedule.com"
+	'global terms of service address
+	Application.Value("TERMS_OF_SERVICE_EMAIL_ADDRESS") = "termsofservice@worshipschedule.com"
+	'global try it address
+	Application.Value("TRY_IT_EMAIL_ADDRESS") = "tryit@worshipschedule.com"
+	
+	' global gtd street address
+	Application.Value("APP_STREET_ADDRESS") = "<strong>GTD Solutions LLC</strong><br />16827 Interlachen Boulevard<br />Lakeville, MN 55044"
+	
+	'global support page url
+	Application.Value("SUPPORT_URL") = "/support.asp"
+	
+	' pricing
+	Application.Value("MEMBER_LOGIN_TIER") = "100"
+	Application.Value("MONTHLY_BASE_PRICE") = "25.00"
+	Application.Value("MONTHLY_BASE_PRICE_ADDITIONAL_USERS") = "10.00"
+	Application.Value("6_MONTH_BASE_PRICE") = "150.00"
+	Application.Value("12_MONTH_BASE_PRICE") = "285.00"
+	
+	' global login session timeout
+	Application.Value("SESSION_TIMEOUT") = 3600	' seconds
+	Application.Value("SESSION_ABANDON_TIMEOUT") = 8	' hours
+	
+	' paypal gateway address
+	Application.Value("PAYPAL_GATEWAY") = "https://www.paypal.com/cgi-bin/webscr"
+	' paypal business id
+	Application.Value("PAYPAL_BUSINESS_ID") = "info@worshipschedule.com"
+	
+	' global schedule/event html background color 
+	Application.Value("SCHEDULE_HTML_BACKGROUND_COLOR") = "#ffffff,#efefef,#efd768,#bfcaff,#e8ff9f,#ffcffe,#cfc1b5,#e5afff,#e0e1ef"
+	
+End Sub
+
+</SCRIPT>

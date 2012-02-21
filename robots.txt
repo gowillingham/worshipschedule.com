@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /_app/
+Disallow: /_archive/
+Disallow: /_incs/
+Disallow: /admin/
+Disallow: /client/
+Disallow: /email/
+Disallow: /reports/
+Disallow: /help/

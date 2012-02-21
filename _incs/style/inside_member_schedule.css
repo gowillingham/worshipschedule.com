@@ -1,0 +1,48 @@
+/* *******************************
+*	/member/schedules.asp styles	*
+*********************************/
+
+.gtdCalContainer								{margin-top:10px;}
+
+#container .contentwrap .content .gtdCalGrid	{width:865px;margin:0 auto;}
+.gtdCalGrid										{border:solid 2px #4284de;margin:0 auto;padding:0;}
+.gtdCalGrid td									{padding:0 0 3px 0;text-align:right;width:14.2%;border:solid 1px #4284de;}
+
+.gtdCalHeader									{text-align:center;font-weight:bold;font-size:2.0em;margin-bottom:-1.0em;}
+
+#container .contentwrap .content .gtdCalGrid .gtdCalTopNav	{width:865px;margin:0 auto;}
+.gtdCalTopNav td								{width:1%; padding:0 2px;vertical-align:middle;}
+.gtdCalTopNav .gtdCalTopNavToday				{width:95%;text-align:right;}
+
+.gtdCalTopNavMonthYearPicker					{white-space:nowrap;}
+.gtdCalTopNavMonthYearPicker select				{border:solid 1px #4284de;margin:0 0 0 5px;padding:0;}
+	
+.gtdCalWeekdayHeader							{font-weight:bold;font-size:1.1em;background-color:#4284de;color:#fff;}
+.gtdCalWeekdayHeader td							{text-align:center;padding:4px 3px 5px;}
+
+.gtdCalGridToday								{background-color:#ffffcf;}
+
+.gtdDayNumberContainer							{margin:0;padding:2px 1px;text-align:right;}
+.gtdDayNumberContainer a						{font-weight:bold;text-decoration:none;}
+	
+.gtdCalGrid .gtdCalItem							{background-color:#f9f9f9;font-size:.9em;padding:2px 3px;border:solid 1px #4284de;margin:3px 3px 0;}
+.gtdCalGrid .gtdCalItem a						{text-decoration:none;color:#000;}
+.gtdCalGrid .gtdCalItem a.highlight				{color:#4284de;}
+.gtdCalGrid .gtdCalItem a:hover					{text-decoration:underline;}
+
+.gtdCalGrid .gtdCalItem ul.toolbar				{margin:7px 0 0 0;}
+.gtdCalGrid .gtdCalItem ul.toolbar li			{display:inline;margin:0 2px 0 0;}
+
+.gtdCalGrid .gtdCalItem ul.toolbar li .icon		{margin:0;}
+
+
+#container .contentwrap .content #team-grid table {width:868px;margin-bottom:25px;}
+
+#team-grid table.grid							{border: solid 2px #4284de;}
+#team-grid table.grid .header td				{font-size:1.1em;border:none;background-color:#4284de;color:#fff;width:22%;}
+#team-grid table.grid td						{border-bottom:none;vertical-align:top;border-right:solid 1px #cacaca;}
+#team-grid table.grid .first-skill-row td		{border-top:none;}
+#team-grid table.grid td.skill-header-column	{border-right:solid 2px #4284de;width:12%;vertical-align:middle;}
+#team-grid table.grid .highlight				{color:red;}
+#team-grid table.grid td ul li					{margin:2px 0 2px 0;padding:0;}
+

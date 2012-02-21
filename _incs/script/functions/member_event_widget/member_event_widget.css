@@ -1,0 +1,29 @@
+﻿#container #availability-widget							{margin:0 0 20px 0;padding:0;float:right;border:solid 2px #000;width:173px;}
+#container #availability-widget h4						{font-size:1.2em;font-weight:bold;margin:0;padding:5px 7px;background-color:#000;color:#fff;}
+#container #availability-widget .bottom					{padding:5px 1px 2px;background-color:#000;color:#fff;}
+#container #availability-widget #member-dropdown		{margin:0;padding:0;width:100%;}
+#container #availability-widget .event-list				{margin:0;padding:0;font-family:verdana;}
+#container #availability-widget .event-list	li						{white-space:nowrap;margin:2px;padding:0 0 0 0;overflow:hidden;}
+#container #availability-widget .event-list	li .date				{width:25px;letter-spacing:-1.0px;margin:0 3px 0 0;padding:2px 3px 2px 2px;border:solid 1px #000;font-size:.8em;float:left;overflow:hidden;}
+#container #availability-widget .event-list	li .available			{}
+#container #availability-widget .event-list	li .not-available		{border-color:red;color:red;background-color:#ffdfe0;}
+#container #availability-widget .event-list	li .unknown-available	{border-color:#ffa500;color:#ffa500;background-color:#ffffcf;}
+#container #availability-widget .event-list	li .date .month		{font-weight:bold;padding:0;text-align:center;}
+#container #availability-widget .event-list	li .date .day		{font-weight:bold;text-align:center;}
+#container #availability-widget .event-list	li.error			{padding:5px;white-space:normal;font-style:italic;color:#7f7f7f;}
+#container #availability-widget .event-list	li.count			{line-height:1.2em;margin:10px 0 0 0;border-top:solid 1px #cfcfcf;background-color:#efefef;padding:3px 0;text-align:center;font-style:italic;color:#000;}
+#container #availability-widget .event-list	li.note				{white-space:normal;font-size:0.9em;margin:7px 3px;padding:3px !important;border:solid 1px #eeef59;background-color:#feffaf;}
+#container #availability-widget .event-list	li.note	h5			{font-style:italic;margin:0;padding:0 0 7px 0;}
+#container #availability-widget .event-list	li.note	h5 span		{font-weight:normal;}
+#container #availability-widget .event-list	li p				{margin:0 0 0 0;padding:6px 0 0 0;}
+
+#container #view-button-container,
+#container #past-event-button-container				{white-space:nowrap;text-align:center;float:right;clear:both;padding:8px 0 8px;}
+#container #past-event-button-container				{margin-bottom:20px;}
+#container #view-button-container a,
+#container #past-event-button-container	a			{white-space:nowrap;color:#fff;background-color:black;margin:1px;font-size:0.9em;font-weight:bold;text-decoration:none;overflow:auto;}
+#container #past-event-button-container	a			{padding:3px 18px;}
+
+#container #view-button-container a.selected,
+#container #past-event-button-container	a.selected	{background-color:gray;}
+

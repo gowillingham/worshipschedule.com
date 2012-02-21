@@ -1,0 +1,78 @@
+﻿#container .contentwrap .content									{margin:0;padding:10px;}
+#container .contentwrap .content h3									{margin:0;padding:10px 0;font-size:1.9em;}
+#container .contentwrap .content .first								{margin-top:0px;padding-top:0px;}
+#container .contentwrap .content .form								{width:665px;margin:0;padding:0;}
+#container .contentwrap .content .message							{width:687px;margin:0 0 15px 0;}
+#container .contentwrap .content .summary							{width:687px;margin:0 0 15px 0;}
+#container .contentwrap .content .grid								{width:655px;margin:0 0 15px 0;}
+
+.form .error				{border: solid 1px #cbdceb;margin:10px;background-color:#e8eef7;}
+.form .error .icon			{float:left;margin:5px;}
+.form .error .alert			{color:red;font-size:1.2em;line-height:1.2em;font-weight:bold;margin:4px 0 0 0;}
+.form .error .listing		{margin:10px 0 5px 30px;}
+.form .error .listing ol	{font-size:1.1em;list-style-type:decimal;list-style-position:outside;}
+.form .error .listing ol li {margin:5px 0 !important;line-height:1.0em !important;font-size:0.9em;}
+
+#container .contentwrap .content .tip-box							{margin:0 0 20px 0;width:150px;}
+
+#container .contentwrap .content .tip-box ul li.style-for-default				{color:#000;}
+#container .contentwrap .content .tip-box ul li.style-for-not-available			{color:red;}
+#container .contentwrap .content .tip-box ul li.style-for-unknown-available		{color:#ffa500;}
+#container .contentwrap .content .tip-box ul li.style-for-publish				{color:#4483dc;}
+#container .contentwrap .content .tip-box ul li.style-for-unpublish				{color:gray}
+
+#container .contentwrap .content .dialog										{margin:0;}
+
+#container .contentwrap .content #schedule-list								{width:160px;float:right;}
+#container .contentwrap .content #schedule-list li							{border:solid 1px black;padding:1px 3px 3px;margin:0 0 5px 0;}
+#container .contentwrap .content #schedule-list li.schedule-list-header		{background-repeat:no-repeat;background-image:url('/_images/icons/calendar.png');padding-left:20px;border:none;font-size:1.2em;font-weight:bold;}
+
+#container .contentwrap .content #schedule-list li .toolbar				{margin:5px -1px 0 -1px;}
+#container .contentwrap .content #schedule-list li .toolbar .icon		{margin:0 1px 0 0;}
+
+#container .contentwrap .content .gtdCalCellItem a,	
+#container .contentwrap .content .gtdCalCellItem a:link,	
+#container .contentwrap .content .gtdCalCellItem a:visited,
+#container .contentwrap .content #schedule-list li a,	
+#container .contentwrap .content #schedule-list li a:link,	
+#container .contentwrap .content #schedule-list li a:visited	{color:#000;text-decoration:none;}
+#container .contentwrap .content .gtdCalCellItem a:hover,		
+#container .contentwrap .content #schedule-list li a:hover		{text-decoration:underline;}
+
+#container .contentwrap .content #schedule-list li.tip-box		{width:150px;border-color:#cacaca;float:none;margin-top:20px;}
+#container .contentwrap .content #schedule-list li.tip-box h3,
+#container .contentwrap .content #schedule-list li.tip-box p,
+#container .contentwrap .content #schedule-list li.tip-box li	{margin:5px;border:none;}
+#container .contentwrap .content #schedule-list li.tip-box li	{}
+
+#container .contentwrap .content .gtdCalContainer			{margin:0;padding:0;}
+#container .contentwrap .content .gtdCalHeader				{font-weight:bold;font-size:1.5em;margin-bottom:-17px;margin-top:5px;}
+#container .contentwrap .content .gtdCalTopNav				{float:right;margin-right:13px;margin-bottom:5px;}
+
+#container .contentwrap .content .gtdCalTopNav td img		{margin-bottom:-4px;}
+#container .contentwrap .content .gtdCalTopNav select		{border:solid 1px #4483dc;font-size:.9em;margin:0 1px;}
+#container .contentwrap .content .gtdCalTopNav td			{padding:0 2px;}
+
+#container .contentwrap .content table.gtdCalGrid			{border-collapse:collapse;width:690px;margin:0 0 0 0;padding:0;float:left;}
+#container .contentwrap .content table.gtdCalGrid td		{height:5em;color:#4f4f4f;font-size:.9em;border:solid 1px black;}
+
+#container .contentwrap .content tr.gtdCalWeekdayHeader td	{height:auto;color:#ffffff;background-color:#000000;width:14.29%;padding:3px 0;text-align:center;font-weight:bold;font-size:1.1em;}
+
+			
+#container .contentwrap .content .gtdCalGridToday			{background-color:#FFFFCF;}
+#container .contentwrap .content .gtdDayNumberContainer		{padding:1px;text-align:right;background-color:#F2EFFF;}
+
+#container .contentwrap .content .gtdCalCellItem					{color:#000000;border:solid 1px #000000;margin:2px;padding:1px 2px 2px 2px;}
+#container .contentwrap .content .gtdCalCellItem strong				{font-weight:bold;line-height:1.0em;}
+#container .contentwrap .content .gtdCalCellItem div.toolbar		{margin:4px -1px 1px;}
+#container .contentwrap .content .gtdCalCellItem div.toolbar .icon	{margin:0 1px 0 0;}
+#container .contentwrap .content .gtdCalCellItem div.toolbar .extra-room {margin:0 2px;}
+
+/* modal dialog formatting .. */
+.ui-dialog .ui-dialog-title										{font-weight:bold;}
+.ui-dialog .ui-dialog-buttonpane								{text-align:center;}
+/* overflow:visible removes extra button width in ie */
+.ui-dialog .ui-dialog-buttonpane button							{overflow:visible;}
+.ui-dialog .ui-dialog-container .ui-dialog-content p			{padding:0;margin:12px 12px 0;line-height:1.2em;}
+
+#publish-schedule-dialog										{padding:0;margin:0;}

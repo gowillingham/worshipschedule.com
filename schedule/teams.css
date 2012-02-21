@@ -1,0 +1,150 @@
+#container .contentwrap .content h3															{font-size:1.9em;margin:0 0 10px 10px;padding:0 0 5px 0;}
+#container .contentwrap .content h4															{font-size:1.5em;color:#ec5000;font-weight:normal;margin:0 0 0 10px;padding:5px 0;}
+#container .contentwrap .content .first														{margin-top:-13px;}
+#container .contentwrap .content p															{padding:10px 230px 0 0;font-size:1.1em;line-height:1.3em;}
+
+#container .contentwrap .content .message													{width:635px;}
+#container .contentwrap .content #master-team-view											{width:655px;}
+#container .contentwrap .content #master-team-view table									{width:635px;margin:0 10px 20px 10px;padding:0;border:solid 2px #000;border-collapse:collapse;}
+#container .contentwrap .content #master-team-view table th									{width:22%;padding:3px 0 0 0;text-align:center;font-size:1.1em;font-weight:bold;border:solid 1px #000;background-color:#000;color:#fff;}
+#container .contentwrap .content #master-team-view table th.skill-header-cell				{width:12%;border-right-width:2px;border-bottom-width:2px;}
+#container .contentwrap .content #master-team-view table td.skill-label-cell				{font-family:verdana;letter-spacing:-1px;font-size:0.9em;border-right-width:2px;vertical-align:middle;font-weight:bold;background-color:#efefef;color:#000;}
+
+#container .contentwrap .content #master-team-view table .event-header						{font-size:0.9em;padding:3px 0 3px 3px;}
+
+#container .contentwrap .content #master-team-view table .event-item						{font-size:1.2em;border-bottom:solid 2px #000;vertical-align:middle;}
+#container .contentwrap .content #master-team-view table .top								{border-bottom:none;}
+#container .contentwrap .content #master-team-view table .bottom							{border-top:none;}
+#container .contentwrap .content #master-team-view table .event-item .toolbar				{padding:8px 0 1px 0;text-align:center;}
+#container .contentwrap .content #master-team-view table .event-item img					{margin:0 2px;}
+#container .contentwrap .content #master-team-view table .event-item p						{margin:0;padding:0;color:#000;}
+#container .contentwrap .content #master-team-view table .event-item strong					{line-height:1.1em;}
+
+#container .contentwrap .content #master-team-view table td									{padding:3px 2px 3px 3px;border:solid 1px #000;}
+#container .contentwrap .content #master-team-view table ul									{font-weight:normal;padding:0;margin:0;}
+#container .contentwrap .content #master-team-view table li									{letter-spacing:-1px;font-size:.9em;font-family:verdana;margin:2px 0;padding:1px 0 1px 12px;background-image:url(/_images/icons/bullet_black_8x8.png);background-repeat:no-repeat;background-position:1px 3px;}
+#container .contentwrap .content #master-team-view table li a								{color:#000;text-decoration:none;}
+#container .contentwrap .content #master-team-view table li a:hover							{text-decoration:underline;}
+
+#container .contentwrap .content #master-team-view table li.not-available					{}
+#container .contentwrap .content #master-team-view table li.available						{}
+#container .contentwrap .content #master-team-view table li.not-available a					{}
+#container .contentwrap .content #master-team-view table li.available a						{}
+#container .contentwrap .content #master-team-view table li.style-for-available				{}
+#container .contentwrap .content #master-team-view table li.style-for-not-available			{background-image:url(/_images/icons/bullet_red_8x8.png);}
+#container .contentwrap .content #master-team-view table li.style-for-unknown-available		{background-image:url(/_images/icons/bullet_orange_8x8.png);}
+#container .contentwrap .content #master-team-view table li.style-for-available a			{}
+#container .contentwrap .content #master-team-view table li.style-for-not-available a		{color:red;}
+#container .contentwrap .content #master-team-view table li.style-for-unknown-available a	{color:#ffa500;}
+
+#container .contentwrap .content #master-team-view table li.unpublish						{display:none;}
+#container .contentwrap .content #master-team-view table li.publish							{}
+#container .contentwrap .content #master-team-view table li.unpublish a						{}
+#container .contentwrap .content #master-team-view table li.publish a						{}
+#container .contentwrap .content #master-team-view table li.style-for-publish				{background-image:url(/_images/icons/bullet_blue_8x8.png);}
+#container .contentwrap .content #master-team-view table li.style-for-unpublish				{background-image:url(/_images/icons/bullet_white_8x8.png);display:inherit;}
+#container .contentwrap .content #master-team-view table li.style-for-publish a				{color:#4483dc;}
+#container .contentwrap .content #master-team-view table li.style-for-unpublish a			{color:gray;}
+
+#container .contentwrap .content #master-team-view .first-in-group							{border-top:solid 2px #000;}
+
+#container .contentwrap .content ul#team-editor												{margin:0;padding:0;}
+#container .contentwrap .content ul#team-editor h5											{cursor:pointer;padding:3px 3px 3px 16px;background-color:#000;background-image:url('/_images/icons/delta_right.gif');background-repeat:no-repeat; background-position:3px 4px;color:white;margin:2px 0;border:solid 1px gray;}
+#container .contentwrap .content ul#team-editor li											{font-weight:inherit;margin:0;padding:0;}
+#container .contentwrap .content ul#team-editor	table										{border:none;padding:0;margin:0 0 5px 0;}
+#container .contentwrap .content ul#team-editor td											{width:145px;border:none;padding:0;margin:0;}
+
+#container .contentwrap .content ul#team-editor	.button-cell								{text-align:center;vertical-align:middle;width:24px;}
+#container .contentwrap .content ul#team-editor	.button-cell input							{width:24px;padding:0;text-align:center;}
+#container .contentwrap .content ul#team-editor	input:submit    							{width:24px;padding:0;margin:1px;}
+#container .contentwrap .content ul#team-editor	select		    							{width:100%;height:75px;}
+#container .contentwrap .content ul#team-editor	.header td      							{font-weight:bold;padding:3px 0 2px 2px;}
+#container .contentwrap .content ul#team-editor	td											{width:145px;padding:1px;}
+#container .contentwrap .content ul#team-editor	td.buttons 									{width:24px;}
+
+#container .contentwrap .content ul#team-editor div#progress    							{border:none;background-position:center;background-repeat:no-repeat;background-image: url(/_images/icons/loader.gif);height:91px;}
+
+#container .contentwrap .content ul#team-editor h6											{margin:8px 3px 3px;padding:0;}
+#container .contentwrap .content ul#team-editor	ul.notes									{margin:1px;border:solid 1px #4483dc;}
+#container .contentwrap .content ul#team-editor	ul.notes li									{padding:3px 5px;background-image:none;}
+
+#container .contentwrap .content ul#team-editor	select.not-available-members					{color:red;}
+#container .contentwrap .content ul#team-editor	select.scheduled-members option.not-available	{color:red;}
+
+#container #availability-widget																	{margin:0 14px 0 0;width:198px;}
+
+#container #view-button-container																{width:200px;margin:0px 14px 0px 0;}
+#container #past-event-button-container															{width:200px;margin:-4px 14px 0px 0;}
+#container #view-button-container a																{padding:3px 23px;}
+#container #past-event-button-container	a														{}
+#container .view-filter-key																		{margin-top:20px !important;}
+
+
+#container .contentwrap .content .schedule-view li.not-available				{}
+#container .contentwrap .content .schedule-view li.available					{}
+#container .contentwrap .content .schedule-view li.not-available a				{}
+#container .contentwrap .content .schedule-view li.available a					{}
+#container .contentwrap .content .schedule-view li.style-for-available			{}
+#container .contentwrap .content .schedule-view li.style-for-not-available		{background-image:url(/_images/icons/bullet_red_8x8.png);}
+#container .contentwrap .content .schedule-view li.style-for-unknown-available	{background-image:url(/_images/icons/bullet_orange_8x8.png);}
+#container .contentwrap .content .schedule-view li.style-for-available a		{}
+#container .contentwrap .content .schedule-view li.style-for-not-available a		{color:red;}
+#container .contentwrap .content .schedule-view li.style-for-unknown-available a	{color:#ffa500;}
+
+#container .contentwrap .content .tip-box ul li.style-for-default				{color:#000;}
+#container .contentwrap .content .tip-box ul li.style-for-publish				{color:#4483dc;}
+#container .contentwrap .content .tip-box ul li.style-for-unpublish				{color:gray}
+#container .contentwrap .content .tip-box li.style-for-available			{}
+#container .contentwrap .content .tip-box li.style-for-not-available		{color:red;}
+#container .contentwrap .content .tip-box li.style-for-unknown-available	{color:#ffa500;}
+
+#container .contentwrap .content .tip-box ul.filters				{margin:10px 0 0 0;padding:0;}
+#container .contentwrap .content .tip-box ul.filters li				{list-style:none;margin:2px 0;padding:0 0 0 0;}
+#container .contentwrap .content .tip-box ul.filters li	.checkbox	{margin:0 0 0 0;padding:0 0 0 0;}
+
+#container #copy-event-team-grid						{padding:0;margin:0 10px;width:575px;}
+#container #copy-event-team-grid table					{padding:0;margin:0;width:100%;}
+#container #copy-event-team-grid table td				{padding:0;}
+#container #copy-event-team-grid table td#copy-button	{width:20%;text-align:center;vertical-align:top;padding:50px 0 0 0;}
+
+#container #copy-event-team-grid .event-item			{width:230px;border:solid 2px #000;}
+#container #copy-event-team-grid .event-item h4			{padding:4px;margin:0;font-size:1.3em;text-align:center;color:#fff;background-color:#000;}
+#container #copy-event-team-grid .event-item h5			{padding:0;margin:5px;font-weight:normal;font-size:1.3em;text-align:center;}
+#container #copy-event-team-grid .event-item h6			{padding:0;margin:5px;text-align:center;font-size:1.2em;}
+#container #copy-event-team-grid .event-item .toolbar	{text-align:center;margin:15px 0 7px 0;padding:0;}
+#container #copy-event-team-grid .event-item .toolbar img	{margin:0 3px;}
+
+#container #copy-event-team-grid table td						{vertical-align:top;}
+#container #copy-event-team-grid table td#edit-item				{padding:0;margin:0;}
+#container #copy-event-team-grid table td#editor				{padding:0 0 0 10px;margin:0;vertical-align:top;}
+#container #copy-event-team-grid table td #team-editor			{width:425px;margin:0;}
+#container #copy-event-team-grid table td #team-editor select	{font-family:verdana;letter-spacing:-1px;font-size:.9em;}
+#container #copy-event-team-grid table td#edit-item .event-item	{width:185px;}
+
+#container #copy-event-team-grid .event-item .bottom		{padding:3px 3px 5px 3px;background-color:#000;color:#fff;}
+#container #copy-event-team-grid .event-item .bottom select	{margin:3px 0;width:100%;}
+
+#container #copy-event-team-grid .event-item ul.event-team			{padding:5px;margin:0 5px 5px 5px;font-family:verdana;background-color:#fff;}
+#container #copy-event-team-grid .event-item ul.event-team li		{margin:3px 0;padding:0;font-size:1.1em;font-weight:bold;}
+#container #copy-event-team-grid .event-item ul.event-team li ul	{margin:5px 0;}
+
+#container #copy-event-team-grid .event-item ul.event-team li ul li				{margin:3px 0;padding:0 0 0 15px;font-size:.8em;background-color:inherit;font-weight:normal;background-position:2px 2px;background-image:url(/_images/icons/bullet_black_8x8.png);background-repeat:no-repeat;}
+#container #copy-event-team-grid .event-item ul.event-team li ul li	a			{color:#000;text-decoration:none;}
+#container #copy-event-team-grid .event-item ul.event-team li ul li	a:hover		{color:#000;text-decoration:underline;}
+
+#container #copy-event-team-grid .event-item p.alert							{line-height:1.2em;padding:10px;margin:0;font-style:italic;font-size:1.2em;color:#7f7f7f;}
+
+#container #copy-event-team-grid .event-item ul.event-team li.alert				{font-size:0.9em;text-align:left;font-weight:normal;}
+#container #copy-event-team-grid .event-item ul.event-team li.alert	h5			{letter-spacing:-1px;margin:7px 0;padding:2px 0 2px 20px;font-weight:bold;text-align:left;background-image:url(/_images/icons/exclamation.png);background-repeat:no-repeat;background-position:0 2px;}
+#container #copy-event-team-grid .event-item ul.event-team li.alert	p			{margin:0;padding:3px;line-height:1.2em;font-style:italic;font-size:1.2em;color:#7f7f7f;}
+
+#container .contentwrap .content #copy-event-team-grid .event-team li.not-available				{}
+#container .contentwrap .content #copy-event-team-grid .event-team li.available					{}
+#container .contentwrap .content #copy-event-team-grid .event-team li.not-available a				{}
+#container .contentwrap .content #copy-event-team-grid .event-team li.available a					{}
+#container .contentwrap .content #copy-event-team-grid .event-team li.style-for-available			{}
+#container .contentwrap .content #copy-event-team-grid .event-team li.style-for-not-available		{background-image:url(/_images/icons/bullet_red_8x8.png);}
+#container .contentwrap .content #copy-event-team-grid .event-team li.style-for-unknown-available	{background-image:url(/_images/icons/bullet_orange_8x8.png);}
+#container .contentwrap .content #copy-event-team-grid .event-team li.style-for-available a		{}
+#container .contentwrap .content #copy-event-team-grid .event-team li.style-for-not-available a		{color:red;}
+#container .contentwrap .content #copy-event-team-grid .event-team li.style-for-unknown-available a	{color:#ffa500;}

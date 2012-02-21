@@ -1,0 +1,27 @@
+﻿.form, 
+.message, 
+.details														{width:622px;}
+
+#container .contentwrap .content h3								{font-size:1.9em;margin:0 0 10px 10px;padding:0 0 5px 0;}
+#container .contentwrap .content h4								{font-size:1.5em;color:#ec5000;font-weight:normal;margin:0 0 0 10px;padding:5px 0;}
+#container .contentwrap .content .first							{margin-top:-13px;}
+#container .contentwrap .content p								{padding:10px 240px 0 0;font-size:1.1em;line-height:1.3em;}
+
+/* modal dialog formatting .. */
+.ui-dialog .ui-dialog-title										{font-weight:bold;}
+.ui-dialog .ui-dialog-buttonpane								{text-align:center;}
+/* overflow:visible removes extra button width in ie */
+.ui-dialog .ui-dialog-buttonpane button							{overflow:visible;}
+.ui-dialog .ui-dialog-container .ui-dialog-content p			{padding:0;margin:12px 12px 0;line-height:1.2em;}
+.ui-dialog .ui-dialog-container .ui-dialog-content table		{padding:0;margin:12px auto 12px;}
+
+#bulk-delete-modal-dialog										{padding:0;margin:0;}
+
+#program-member-widget											{padding:0;margin:0;}
+#program-member-widget .hint									{margin:0 12px 12px 12px;font-style:italic;font-size:.9em;}
+#program-member-widget table									{width:600px;}
+#program-member-widget table td									{vertical-align:middle;}
+#program-member-widget table td	h5								{padding:5px 0;margin:0;}
+#program-member-widget table td select							{width:280px;height:195px;}
+#program-member-widget table td #remove-members-button			{margin:2px;}
+#program-member-widget table td #add-members-button				{margin:2px;}

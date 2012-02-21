@@ -1,0 +1,13 @@
+﻿.form, .message, .details	{width:622px;}
+.summary					{width:650px;}
+
+/* modal dialog formatting .. */
+.ui-dialog .ui-dialog-title										{font-weight:bold;}
+.ui-dialog .ui-dialog-buttonpane								{text-align:center;}
+/* overflow:visible removes extra button width in ie */
+.ui-dialog .ui-dialog-buttonpane button							{overflow:visible;}
+.ui-dialog .ui-dialog-container .ui-dialog-content p			{padding:0;margin:12px 12px 0;line-height:1.2em;}
+
+#no-files-selected-dialog										{padding:0;margin:0;}
+
+

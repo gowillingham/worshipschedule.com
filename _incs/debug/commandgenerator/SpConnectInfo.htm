@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+<META name="VI60_DefaultClientScript" Content="VBScript">
+
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+<TITLE>Stored Procedure Command Parameter Code</TITLE>
+<SCRIPT ID=clientEventHandlersVBS LANGUAGE=vbscript>
+<!--
+
+Sub cmdOK_onclick
+dim colInputs,oInput
+set colInputs = tblSel.getElementsByTagName("INPUT")
+for each oInput in colInputs
+	if len(oInput.value) = 0 then
+		MsgBox "You need to enter something into the " & oInput.name & " field.",,"Validation"
+		exit sub
+	end if
+next
+parent.document.all.tags("FRAME").item(1).src = "sp_parameters.asp?Srv=" & txtSrv.value & "&db=" & txtDB.value & "&User=" & txtUser.value & "&Pwd=" & txtPwd.value & "&Proc=" & txtProc.value
+End Sub
+
+-->
+</SCRIPT>
+</HEAD>
+<BODY style="FONT-SIZE: 8pt; FONT-FAMILY: sans-serif">
+
+<TABLE id=tblSel style="FONT-SIZE: 10pt; WIDTH: 642px; HEIGHT: 148px" 
+ >
+<TR>
+	<TD colspan=4 noWrap align=middle >
+		<div style="FONT-WEIGHT: bold; FONT-SIZE: 14pt">Stored Procedure Command Parameter Code Generator</div>
+		<span style="font-size:9pt;color:red;">** This Page Must Be Run In Internet Explorer **</span>
+		<br />&nbsp;
+	</TD>
+</TR>
+<TR>
+	<TD >Server</TD>
+	<TD align=left><INPUT id=txtSrv style="WIDTH: 176px; HEIGHT: 22px" 
+      size=25 name=Server value="acerlaptop"></TD>
+	<TD>Database</TD>
+	<TD><INPUT id=txtDB style="WIDTH: 186px; HEIGHT: 22px" 
+      size=26 name=Database value="worshipschedule"></TD>
+</TR>
+<TR>
+	<TD  noWrap >User Name</TD>
+	<TD><INPUT id=txtUser 
+      style="WIDTH: 174px; HEIGHT: 22px" size=24 name=User value="weblogin"></TD>
+	<TD>Password</TD>
+	<TD><INPUT id=txtPwd style="WIDTH: 171px; HEIGHT: 22px" 
+      size=24 name=Password value="worshipschedule"></TD>
+</TR>
+<TR>
+	<TD colspan=2 >Procedure Name: <BR>use owner name if 
+      not dbo	</TD> 
+	<TD colspan = 2><INPUT id=txtProc 
+      style="WIDTH: 374px; HEIGHT: 22px" size=53 
+name=Procedure>  </TD>
+</TR>
+<TR>
+	<TD colspan=4 noWrap align=middle><INPUT id=cmdOK  type=button value=OK name=button1></TD>
+</TR>
+</TABLE>
+
+
+</BODY>
+</HTML>
