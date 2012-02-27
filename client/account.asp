@@ -124,7 +124,8 @@ Sub Main()
 					str = str & FormSubscriptionToString(page)
 				End If
 			Else
-				str = str & FormSubscriptionToString(page)
+'				str = str & FormSubscriptionToString(page)
+				str = str & "<p>Sorry - we are unable to renew accounts at this time. </p>"
 			End If
 			
 		Case INSERT_CLIENT_SUBSCRIPTION
@@ -138,7 +139,8 @@ Sub Main()
 					str = str & FormSubscriptionToString(page)
 				End If
 			Else
-				str = str & FormSubscriptionToString(page)
+'				str = str & FormSubscriptionToString(page)
+				str = str & "<p>Sorry - we are unable to accept new accounts at this time. </p>"
 			End If
 			
 		Case UPDATE_CLIENT_CONTACT_INFO
