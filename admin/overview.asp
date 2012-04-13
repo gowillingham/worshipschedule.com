@@ -371,6 +371,21 @@ Function AdminSummaryToString(page)
 	str = str & "<br /><br />Regular members are not able to access this part of your account. </p></div>"
 	
 	str = str & "<div class=""summary"">"
+	str = str & "<div class=""message"">"
+	str = str & "<h3 class=""alert-message"">"
+	str = str & "<img class=""icon"" src=""/_images/icons/critical.png"" />"
+	str = str & "Important message for Worshipschedule Administrators!"
+	str = str & "</h3>"
+	str = str & "<div class=""listing"">"
+	str = str & "As of April 2012 the Worshipschedule web scheduling application is no longer under active development. "
+	str = str & "As a courtesy to you, your account will be extended until September 15 2012, free of charge. "
+	str = str & "However, all access to your account will end September 15, 2012. "
+	str = str & "Please contact <a href=""mailto:support@worshipschedule.com"">support@worshipschedule.com</a> with any questions. "
+	str = str & "</div>"
+	str = str & "</div>"
+
+
+
 	str = str & "<h3 class=""first"">Welcome " & html(page.Member.NameFirst & " " & page.Member.NameLast) & "</h3>"
 	
 	str = str & "<h5 class=""schedule"">Upcoming events</h5>"
