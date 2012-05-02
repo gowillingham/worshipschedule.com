@@ -122,7 +122,7 @@ Sub SendError(page, exception)
 	str = str &  "ErrorLogID: " & page.ErrorID & vbCrLf
 	str = str &  "SessionID: " & Session.SessionID & vbCrLf
 	str = str &  "RequestMethod: " & Request.ServerVariables("REQUEST_METHOD") & vbCrLf
-	str = str &  "Form Data: " & Request.Form & vbCrLf
+''	str = str &  "Form Data: " & Request.Form & vbCrLf
 	str = str &  "ServerPort: " & Request.ServerVariables("SERVER_PORT") & vbCrLf
 	str = str &  "HTTPS: " & Request.ServerVariables("HTTPS") & vbCrLf
 	str = str &  "Server Address: "  & Request.ServerVariables("LOCAL_ADDR") & vbCrLf

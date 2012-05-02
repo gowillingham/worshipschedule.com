@@ -514,6 +514,15 @@ Function FileSummaryToString(page)
 	Dim dateTime				: Set dateTime = New cFormatDate
 	Dim fileDisplay				: Set fileDisplay = New cFileDisplay
 	
+	' file owner ..
+	Dim member					: Set member = New cMember
+	member.MemberId = page.File.FileOwnerId
+	Call member.Load()
+	
+	Dim fileOwnerText
+	fileOwnerText = member.NameFirst & " " & member.NameLast
+	'If CLng(page.File.FileOwnerId) = CLng(page.Member.MemberId) Then fileOwnerText = "you"
+	
 	Dim fileSizeText		
 	fileSizeText = "This file is using <strong>" & FileSizeToString(page.File.FileSize) & "</strong> of your account file storage space. "
 	
@@ -575,6 +584,7 @@ Function FileSummaryToString(page)
 	str = str & FileDownloadGridForFileSummaryToString(page)
 	
 	str = str & "<h5 class=""other-stuff"">Other stuff</h5>"
+	str = str & "<ul><li>Uploaded by <strong>" & html(fileOwnerText) & "</strong> on " & dateTime.Convert(page.File.DateCreated, "DDDD MMMM dd, YYYY around hh:00 pp") & ". </li>"
 	str = str & "<li>" & downloadCountText & ". </li>"
 	str = str & "<li>" & eventLinkText & ". </li>"
 	str = str & "<li>" & fileSizeText & ". </li></ul>"
@@ -1061,7 +1071,7 @@ Function ValidFile(page)
 		' file too big ..
 		page.File.ClientID = page.Client.ClientID
 		If Not IsSpaceAvailable(page.Uploader.Files(1).Size, page.File, noSpaceMessage) Then
-			AddCustomFrmError(message)
+			AddCustomFrmError("Your account is out of disc space. You will need to remove some files to make room. ")
 			ValidFile = False
 		End If
 	End If
